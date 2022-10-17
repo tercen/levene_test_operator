@@ -4,7 +4,7 @@
   "tags": ["statistical testing", "test", "linear model"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/levene_test_operator"],
-  "container": "tercen/levene_test_operator:latest"
+  "container": "tercen/levene_test_operator:0.0.1"
 }
 
 
