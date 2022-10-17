@@ -1,4 +1,4 @@
-# Tukey's Test
+# Levene's Test
 
 ##### Description
 
@@ -9,26 +9,22 @@ Test for significant pairwise differences among group means while controlling fo
 Input projection|.
 ---|---
 `color` | represents the groups to compare
-`labels` (optional) | represents the random effects to include in the model
 `y-axis`| measurement value
 
 Output relations|.
 ---|---
-`Effect`| Effect
-`DFn`| Degrees of Freedom in the numerator
-`DFd`| Degrees of Freedom in the denominator
-`F`| F-value
+`DF1`| Degrees of Freedom in the numerator
+`DF2`| Degrees of Freedom in the denominator
+`statistic`| Test statistic
 `p`| p-value
-`significance`| Highlights p-values less than the traditional alpha level of .05
-`ges`| Generalized Eta-Squared measure of effect size
 
 ##### Details
 
-The operator is based on the [tukey_hsd R function](https://www.rdocumentation.org/packages/rstatix/versions/0.7.0/topics/tukey_hsd).
+The operator is based on the [levene_test R function](https://www.rdocumentation.org/packages/rstatix/versions/0.7.0/topics/levene_test).
 
 ##### References
 
-See [Tukey's range test on Wikipedia](https://en.wikipedia.org/wiki/Tukey%27s_range_test).
+See [Levene's test on Wikipedia](https://en.wikipedia.org/wiki/Levene%27s_test).
 
 ##### See Also
 
