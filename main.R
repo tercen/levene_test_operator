@@ -15,7 +15,7 @@ fixed_effect <- paste0(
   collapse = " * "
 )
 
-df <- ctx$select(c(".ci", ".ri", ".y", col_names, lab_names)) %>%
+df <- ctx$select(c(".ci", ".ri", ".y", col_names)) %>%
   group_by(.ci, .ri) %>%
   levene_test(., form) %>%
   as_tibble() %>%
