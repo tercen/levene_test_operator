@@ -15,6 +15,8 @@ fixed_effect <- paste0(
   collapse = " * "
 )
 
+form <- formula(paste0(".y ~ ", fixed_effect))
+
 df <- ctx$select(c(".ci", ".ri", ".y", col_names)) %>%
   group_by(.ci, .ri) %>%
   levene_test(., form) %>%
