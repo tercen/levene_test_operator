@@ -21,5 +21,6 @@ df <- ctx$select(c(".ci", ".ri", ".y", col_names)) %>%
   group_by(.ci, .ri) %>%
   levene_test(., form) %>%
   as_tibble() %>%
+  mutate(df1 = as.double(df1), df2 = as.double(df2)) %>%
   ctx$addNamespace() %>%
   ctx$save()
