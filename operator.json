@@ -1,6 +1,6 @@
 {
-  "name": "Levene's test",
-  "description": "Perform Levene's test to assess homogeneity of variance across groups.",
+  "name": "Levene Test",
+  "description": "Performs Levene test to assess homogeneity of variance across groups.",
   "tags": [
     "statistical testing",
     "linear model"
