@@ -11,5 +11,44 @@
   "urls": [
     "https://github.com/tercen/levene_test_operator"
   ],
-  "container": "tercen/levene_test_operator:0.0.1"
+  "container": "tercen/levene_test_operator:0.0.1",
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Groups",
+            "type": "",
+            "description": "Represents the groups to compare",
+            "ontologyMapping": "group",
+            "crosstabMapping": "color",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": [
+          {
+            "kind": "AxisSpec",
+            "metaFactors": [
+              {
+                "kind": "MetaFactor",
+                "name": "Measurement",
+                "type": "numeric",
+                "description": "Measurement values",
+                "ontologyMapping": "measurement",
+                "crosstabMapping": "y",
+                "cardinality": "1",
+                "factors": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
